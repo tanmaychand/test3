@@ -7,7 +7,7 @@ apply plugin: 'sonar-runner'
 //{
   // maven
  //  {
-      url "http://10.109.32.183:8081/nexus/content/groups/public"
+   //   url "http://10.109.32.183:8081/nexus/content/groups/public"
  //  }
 //}
 repositories { jcenter() }
