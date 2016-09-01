@@ -2,7 +2,15 @@ apply plugin :'java'
 
 //apply plugin : 'application'
 //apply plugin: 'sonarqube-runner' 
-apply plugin: "sonar"
+//apply plugin: "sonar"
+apply plugin: 'org.sonarqube'
+sonarqube {
+  properties {
+    property "sonar.projectName", "My Project Name"
+    property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+  }
+}
+
 
 
 //apply plugin: 'sonar-runner'
@@ -19,9 +27,9 @@ dependencies { testCompile "org.mockito:mockito-core:1.+" }
 dependencies {
   testCompile 'junit:junit:4.12'
 }
-sonarRunner {
- sonarProperties {
-   property "sonar.projectName", "bankapp"
-   property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
- }
-}
+//sonarRunner {
+ //sonarProperties {
+ //  property "sonar.projectName", "bankapp"
+ //  property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+// }
+//}
