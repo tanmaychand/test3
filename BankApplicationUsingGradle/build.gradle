@@ -6,8 +6,9 @@ apply plugin :'java'
 
 
 
+//apply plugin: 'org.sonarqube'
+apply plugin: 'sonar-runner'
 apply plugin: 'org.sonarqube'
-//apply plugin: 'sonar-runner'
 //repositories
 //{
   // maven
