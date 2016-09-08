@@ -1,13 +1,13 @@
 apply plugin :'java'
 
 //apply plugin : 'application'
-//apply plugin: 'sonarqube-runner' 
+apply plugin: 'sonarqube-runner' 
 //apply plugin: "sonar"
 
 
 
 
-apply plugin: 'sonar-runner'
+//apply plugin: 'sonar-runner'
 //repositories
 //{
   // maven
